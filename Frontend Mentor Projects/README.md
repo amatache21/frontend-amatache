@@ -1,2 +1,2 @@
-# frontend-amatache
-Frontend project done by me to learn and exercise HTML, CSS and JavaScript.
+# Frontend Mentor Challenges
+Each folder contains my completed Frontend Mentor challenges
