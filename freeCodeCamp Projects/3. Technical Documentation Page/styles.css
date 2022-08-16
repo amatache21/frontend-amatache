@@ -1,0 +1,152 @@
+/*
+======================================
+GENERAL
+======================================
+*/
+
+html {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+}
+
+
+
+/*
+======================================
+LAYOUT + NAVIGATION BAR
+======================================
+*/
+
+.flex-container {
+	display: flex;
+	height: 100%;
+	margin: 0;
+	
+}
+
+#navbar {
+	position: fixed;
+	height: 100%;
+	min-width: 298px;
+	border-right: solid;
+	border-color: gray;
+	
+
+}
+
+#navbar div {
+	  height: 85%;
+	  padding: 0;
+	  overflow: auto;
+}
+
+#navbar header {
+	padding: 18px;
+	padding-left: 30px;
+	text-align: center;
+	font-size: 30px;
+
+}
+
+.nav-link {
+	display: block;
+	border-top: solid;
+	border-color: gray;
+	border-width: 1.75px;
+	padding: 12px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+.nav-link:link,
+.nav-link:visited,
+.nav-link:hover,
+.nav-link:active {
+	color: gray;
+}
+
+
+
+/*
+======================================
+MAIN DOC
+======================================
+*/
+
+#main-doc {
+	position: absolute;
+	left: 350px;
+	/*background-color: lightblue;*/
+	margin: 37px 30px 0 0;
+	line-height: 1.6;
+	font-size: 15px;
+	font-weight: 400;
+	color: #4d4e53
+}
+
+.main-section header {
+	margin-left: -20px;
+	font-weight: 400;
+	font-size: 27px;
+	color: black;
+}
+
+code {
+	display: block;
+	text-align: left;
+	background-color: #f7f7f7;
+	max-width: 100%;
+	padding: 20px 0 20px 15px;
+	margin: 10px 0 0 15px;
+	font-size: 12px;
+	border-radius: 5px;
+	line-height: 2;
+	font-family: monospace;
+	white-space: pre-line;
+
+}
+
+/*
+======================================
+COLORS
+======================================
+*/
+
+
+
+
+/*
+======================================
+RESPONSIVE
+======================================
+*/
+
+@media only screen and (max-width: 800px) {
+
+	.flex-container {
+    	flex-direction: column;
+  	}
+
+	#navbar {
+		position: relative;
+		border: none;
+		height: 400px;
+		margin: 0 2px;
+	}
+
+	#navbar div {
+		border: solid;
+		border-color: grey;
+		border-radius: 5px;
+	}
+
+	#main-doc {
+		position: absolute;
+		top: 450px;
+		left: 0;
+		margin: 37px 30px 0 0;
+		margin-left: 32px;
+	}
+
+
+}

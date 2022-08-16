@@ -1,0 +1,273 @@
+/* GENERAL
+=================================== */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column; /* the axies are reversed */
+	font-family: 'Lato', sans-serif;;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+
+}
+
+/* HEADER
+=================================== */
+header {
+	background-color: SlateBlue;
+	position: fixed;
+	width: 100%;
+
+	box-shadow: 0 1px 5px #000;
+}
+
+#navbar {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 10px 20px 0;
+}
+
+#navbar a {
+	color: Cornsilk;
+	font-size: 1.75em;
+	font-weight: 400;
+	text-shadow: 0 2px 5px #000;
+}
+
+#navbar h5 {
+	margin-right: 20px;
+	width: 90px;
+}
+
+#navbar a:hover {
+	padding-left: 5px;
+}
+
+
+
+
+/* SECTION - WELCOME
+=================================== */
+#welcome-section {
+	height: 100vh;
+
+	background-color: SeaGreen;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	line-height: 1.5;
+}
+
+#welcome-section h1 {
+	font-size: 2.8em;
+	font-weight: 700;
+	color: AntiqueWhite;
+}
+
+#welcome-section h4 {
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: 400;
+	color: DarkSlateGray;
+}
+
+
+
+/* SECTION - PROJECTS
+=================================== */
+h2 {
+	background-color: DarkSlateGray;
+	font-size: 2.5em;
+	color: AntiqueWhite;
+	text-align: center;
+
+	margin: 0 auto;
+}
+
+hr {
+	max-width: 600px;
+	margin: 0 auto;
+	border: none;
+	border-top: .5px solid AntiqueWhite;
+	
+}
+
+#my-projects {
+	background-color: DarkSlateGray;
+	padding-top: 100px;
+}
+
+#projects {
+	background-color: DarkSlateGray;
+	padding: 100px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+#projects div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	width: 90vw;
+	max-width: 460px;
+	height: 30vh;
+	margin: 10px;
+	border-radius: 4px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; /* cover */
+
+	text-align: center;
+	color: AntiqueWhite;
+}
+
+#projects a:nth-of-type(1) div {
+	background-image: url('imgs/survey.png');
+}
+
+#projects a:nth-of-type(2) div {
+	background-image: url('imgs/tribute.png');
+}
+
+#projects a:nth-of-type(3) div{
+	background-image: url('imgs/technical.png');
+}
+
+#projects a:nth-of-type(4) div{
+	background-image: url('imgs/product.png');
+}
+
+.project-tile {
+	background-color: Chocolate;
+	color: AntiqueWhite;
+	padding: 10px 0;
+}
+
+
+
+/* SECTION - CONTACTS
+=================================== */
+#contact {
+	background-color: CadetBlue;
+
+	height: 80vh;
+	padding-top: 80px;
+
+	text-align: center;
+
+}
+
+#contact h1 {
+	font-size: 2.5em;
+	font-weight: 400;
+	color: AntiqueWhite;
+
+	padding: 100px 30px;
+
+} 
+
+#contact ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 15px;
+
+	font-size: 1.5em;
+}
+
+#contact p {
+	padding-left: 5px;
+}
+
+#contact a {
+	display: flex;
+	color: AntiqueWhite;
+	margin: 10px 20px;
+
+	text-shadow: 0 3px 7px #000;
+}
+
+#contact a:hover {
+	color: darkorange;
+}
+
+
+
+
+/* FOOTER
+=================================== */
+footer {
+	background-color: CadetBlue;
+
+	height: 5vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px 10px 10px;
+
+	border-top: 5px solid darkorange;
+}
+
+footer h3 {
+	font-size: .8em;
+	font-weight: 400;
+	color: AntiqueWhite;
+}
+
+footer a:link,
+footer a:visited {
+	color: AntiqueWhite;
+}
+
+footer a:hover {
+	font-size: 1.1em;
+}
+
+
+/* MEDIA QUERIES
+=================================== */
+@media only screen and (min-width: 749px) {
+
+	#projects {
+		flex-direction: initial;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#projects div {
+		width: 46vw;
+	}
+}
+
+@media only screen and (min-width: 1250px) {
+
+	footer a {
+		padding-left: 10%;
+	}
+
+	footer h3 {
+		padding-right: 10%;
+	}
+}
