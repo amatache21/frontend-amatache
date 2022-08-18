@@ -1,2 +1,3 @@
 # frontend-amatache
-Frontend project done by me to learn and exercise HTML, CSS and JavaScript.
+My frontend projects that have helped me learn and exercise HTML and CSS, so far...(JavaScript and more to come).
+
