@@ -132,16 +132,6 @@ body {
 
 
 
-/* MEDIA QUERY - MOBILE HIGHT
-ajust background image position
-=========================================== */
-@media only screen and (max-height: 750px) {
-	.photo {
-		background-position: top;
-	}
-}
-
-
 /* MEDIA QUERY - MOBILE & DESKTOP HIGHT
 ajust card to be scrollable at small viewport heights
 =========================================== */
@@ -156,19 +146,25 @@ ajust card to be scrollable at small viewport heights
 	}
 }
 
+
+/* MEDIA QUERY - MOBILE HIGHT
+ajust background image position
+=========================================== */
+@media only screen and (max-height: 750px) {
+	.photo {
+		background-position: top;
+	}
+}
+
+
 /* MEDIA QUERY - DESKTOP
 =========================================== */
-
-/* i'd like to adjust the width in order to have
-desxtop version when a mobile is turned in landscape mode */
-
-@media only screen and (min-width: 799px) {
+@media only screen and (min-width: 699px) {
 
 	.wrapper {
 		width: 650px;
 		height: 450px;
 		flex-direction: initial;
-		/*background-color: tomato;*/
 	}
 
 	.photo {
@@ -210,6 +206,4 @@ desxtop version when a mobile is turned in landscape mode */
 
 		writing-mode: vertical-lr;
 	}
-
-
 }
