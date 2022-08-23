@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshots
 
 [Desktop version](images/screenshot-desktop.PNG) <br>
-[Mobile version - portrait](images/screenshot-mobile-portait.png) <br>
+[Mobile version - portrait](images/screenshot-mobile-portrait.png) <br>
 [Mobile version - landscape 1](images/screenshot-mobile-landscape-01.png) & [Mobile version - landscape 2](images/screenshot-mobile-landscape-02.png) (for the mobile version in landscape mode, I used the desktop design and I made the page scrollable)
 
 
