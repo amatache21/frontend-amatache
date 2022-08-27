@@ -1,0 +1,96 @@
+/* GENERAL
+=========================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: hsl(0, 0%, 100%);
+
+    border-radius: 20px;
+
+    margin: 2%;
+
+    max-width: 340px;
+    height: 550px;
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* IMAGE
+=========================================== */
+img {
+    width: 100%;
+    height: 62%;
+
+    border-radius: 10px;
+}
+
+
+/* TEXT 
+=========================================== */
+h1 {
+    margin: 20px;
+
+    font-size: 1.6em;
+    color: hsl(218, 44%, 22%);
+}
+
+p {
+    padding: 0 25px 0 25px;
+    font-size: 1.1em;
+    color: hsl(220, 15%, 55%);
+}
+
+
+/* ATTRIBUTION
+=========================================== */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(220, 15%, 55%);
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: hsl(218, 44%, 22%); 
+}
+
+
+
+/* MEDIA QUERY - DESKTOP
+=========================================== */
+@media only screen and (max-height: 580px) {
+    main {
+        display: block;
+    }
+
+    .wrapper {
+        margin: 2% auto;
+    }
+}
+
+
+
+
+
+
+
