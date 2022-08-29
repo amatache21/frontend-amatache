@@ -26,11 +26,11 @@ main {
 
     border-radius: 20px;
 
-    margin: 2%;
+    margin: 2% 2% 0 2%;
 
     max-width: 340px;
     height: 550px;
-    padding: 20px;
+    padding: 1.2em;
 
     text-align: center;
 }
@@ -50,13 +50,13 @@ img {
 h1 {
     margin: 20px;
 
-    font-size: 1.6em;
+    font-size: 1.6rem;
     color: hsl(218, 44%, 22%);
 }
 
 p {
     padding: 0 25px 0 25px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: hsl(220, 15%, 55%);
 }
 
@@ -67,6 +67,8 @@ p {
     font-size: 11px; 
     text-align: center;
     color: hsl(220, 15%, 55%);
+
+    margin-bottom: 2%;
 }
 
 .attribution a { 
@@ -76,7 +78,7 @@ p {
 
 
 
-/* MEDIA QUERY - DESKTOP
+/* MEDIA QUERY - MOBILE - small heights
 =========================================== */
 @media only screen and (max-height: 580px) {
     main {
@@ -85,6 +87,12 @@ p {
 
     .wrapper {
         margin: 2% auto;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    img {
+        height: 55%;
     }
 }
 

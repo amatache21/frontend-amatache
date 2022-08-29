@@ -27,10 +27,9 @@ Users should be able to:
 
 ### Screenshots
 
-[Desktop version](images/screenshot-desktop.PNG) <br>
-[Mobile version - portrait](images/screenshot-mobile-portrait.png) <br>
-[Mobile version - landscape 1](images/screenshot-mobile-landscape-01.png) & [Mobile version - landscape 2](images/screenshot-mobile-landscape-02.png) (for the mobile version in landscape mode, I used the desktop design and I made the page scrollable)
-
+![Desktop version](images/screenshot-desktop.PNG) <br>
+![Mobile version - portrait](images/screenshot-mobile-portrait.png) <br>
+![Mobile version - landscape](images/screenshot-mobile-landscape.gif)
 
 
 ### Links
@@ -70,6 +69,7 @@ Andrei Matache
 - Frontend Mentor - [@amatache21](https://www.frontendmentor.io/profile/amatache21)
 - GitHub - [@amatache21](https://github.com/amatache21/frontend-amatache)
 - Facebook - [Andrei Matache](https://www.facebook.com/matache.andrei.18/)
+- Twitter - [Andrei Matache](https://twitter.com/AndreiMatache6)
 
 ## <a name="acknowledgments"></a>Acknowledgments
 
