@@ -1,0 +1,188 @@
+/* GENERAL
+=========================================== */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   height: 100vh;
+   font-family: 'Outfit', sans-serif;
+   font-size: 10px;
+}
+
+body {
+   background-color: hsl(217, 54%, 11%);
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+a {
+   text-decoration: none;
+   color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+   color: hsl(178, 100%, 50%);
+}
+
+.wrapper {
+   background-color: hsl(216, 50%, 16%);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   border-radius: 15px;
+
+   max-width: 295px;
+   height: 520px;
+
+   padding: 22px;
+}
+
+/* PHOTO
+=========================================== */
+.wrapper-img {
+   width: 100%;
+   height: 57%;
+}
+
+
+.equilibrium-img {
+   width: 100%;
+   height: 100%;
+
+   border-radius: 10px;
+
+   background-color: tomato;
+
+   opacity: 1;
+   transition: .5s ease;
+   backface-visibility: hidden;
+}
+
+.icon-view {
+   opacity: 0;
+   transition: .5s ease;
+   position: relative;
+   bottom: 60%;
+   left: 43%;
+}
+
+.wrapper-img:hover {
+   cursor: pointer;
+   background-color: hsl(178, 100%, 50%);
+   border-radius: 10px;
+}
+
+.wrapper-img:hover .equilibrium-img {
+   opacity: 0.5;
+
+}
+
+.wrapper-img:hover .icon-view {
+   opacity: 1;
+}
+
+
+/* TEXT 
+=========================================== */
+h1 {
+   color: hsl(0, 0%, 100%);
+   font-weight: 600;
+   font-size: 2.3rem;
+}
+
+main > p {
+   color: hsl(215, 51%, 70%);
+   font-weight: 300;
+   font-size: 1.7rem;
+   line-height: 1.5;
+}
+
+.value-time {
+   display: flex;
+   justify-content: space-between;
+
+   font-weight: 400;
+   font-size: 1.7rem;
+}
+
+.value i,
+.value p,
+.time i,
+.time p {
+   display: inline-block;
+}
+
+.value {
+   color: hsl(178, 100%, 50%);
+}
+
+.value p {
+   font-weight: 600
+}
+
+.time {
+   color: hsl(215, 51%, 70%);
+}
+
+hr {
+   border: 1px solid hsl(215, 32%, 27%);
+}
+
+/* AUTHOR
+=========================================== */
+.author {
+   display: flex;
+   align-items: center;
+
+   color: hsl(215, 51%, 70%);
+
+   font-weight: 300;
+   font-size: 1.7rem;
+}
+
+.avatar {
+   width: 35px;
+   height: 35px;
+
+   margin-right: 20px;
+
+   border: 1px solid white;
+   border-radius: 50%;
+}
+
+.author-name {
+   color: hsl(0, 0%, 100%);
+}
+
+
+/* ATTRIBUTION
+=========================================== */
+.attribution {
+   color: hsl(215, 51%, 70%);
+   margin-top: 2px;
+   font-size: 11px; text-align: center;
+}
+
+
+
+/* MEDIA QUERY - MOBILE small heights
+=========================================== */
+@media only screen and (max-height: 580px) {
+   body {
+      display: block;
+   }
+
+   .wrapper {
+      margin: 2% auto;
+   }
+}
+
+
