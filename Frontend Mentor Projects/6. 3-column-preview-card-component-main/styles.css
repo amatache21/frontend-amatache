@@ -1,0 +1,203 @@
+/* GENERAL
+=========================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	height: 100%;
+	display: block;
+	margin: 15% 0;
+	background-color: hsl(0, 0%, 95%);
+}
+
+.wrapper {
+	max-width: 270px;
+	height: 1080px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.card {
+	height: 360px;
+	line-height: 1.6;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.card:nth-child(1),
+.card:nth-child(1) button {
+	background-color: hsl(31, 77%, 52%);
+	color: hsl(31, 77%, 52%);
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+.card:nth-child(2),
+.card:nth-child(2) button {
+	background-color: hsl(184, 100%, 22%);
+	color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3),
+.card:nth-child(3) button {
+	background-color: hsl(179, 100%, 13%);
+	color: hsl(179, 100%, 13%);
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.card:nth-child(1) button:hover,
+.card:nth-child(2) button:hover,
+.card:nth-child(3) button:hover {
+	cursor: pointer;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card:nth-child(1) button:hover {
+	background-color: hsl(31, 77%, 52%);
+	border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.card:nth-child(2) button:hover { 
+	background-color: hsl(184, 100%, 22%);
+	border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.card:nth-child(3) button:hover {
+	background-color: hsl(179, 100%, 13%);
+	border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+/* PHOTO
+=========================================== */
+
+
+
+/* TEXT 
+=========================================== */
+img,
+h1,
+p,
+button {
+	margin: 5% 10% 3% 12%;
+	font-size: 0.9rem;
+}
+
+img {
+/*	border: 1px solid;*/
+	margin-top: 30px;
+	height: 30.76923px;
+	width: 49.23076px;
+
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 95%);
+}
+
+p {
+	color: hsla(0, 0%, 100%, 0.75)
+}
+
+.card:nth-child(1) button,
+.card:nth-child(2) button,
+.card:nth-child(3) button {
+	background-color: hsl(0, 0%, 95%);
+	border-radius: 50px;
+	font-size: 0.8rem;
+	border: none;
+	height: 40px;
+	width: 45%;	
+}
+
+
+
+/* ATTRIBUTION
+=========================================== */
+.attribution { 
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 15%;
+}
+
+.attribution a {
+	color: hsl(179, 100%, 13%);
+	font-size: 0.7rem;
+	text-decoration: none;
+}
+
+
+
+/* MEDIA QUERY - DESKTOP
+=========================================== */
+@media only screen and (min-width: 1100px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		margin: 0;
+	}
+
+	.card {
+		height: initial;
+		justify-content: start;
+		padding: 0 35px 0 15px;
+		line-height: 1.7;
+		padding-top: 20px;
+	}
+
+	.card:nth-child(1) {
+		border-top-left-radius: 7px;
+		border-bottom-left-radius: 7px;
+		border-top-right-radius: 0px;
+	}
+
+	.card:nth-child(3) {
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
+		border-bottom-left-radius: 0px;
+	}
+
+	.card:nth-child(1) button,
+	.card:nth-child(2) button,
+	.card:nth-child(3) button {
+		width: 55%;
+		margin-top: 65px;
+	}
+
+	.wrapper {
+		max-width: 870px;
+		height: 450px;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+
+		margin: 2% 0 0 0;
+	}
+
+	.attribution {
+		margin: 0 0 2% 0;
+	}
+}
+
+TODO
+
+3. modul active al butoanelor
+4. linkurile creatorului
